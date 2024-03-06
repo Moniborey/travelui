@@ -27,6 +27,7 @@ export default function Hero() {
                                 width={20}
                                 height={20}
                                 key={index}
+                                unoptimized={false}
                                 alt=""
                             />
                         ))}
@@ -45,6 +46,7 @@ export default function Hero() {
                                 width={20}
                                 height={20}
                                 alt="play"
+                                unoptimized={false}
                             />
                             <h3 className="font-semibold text-sm tracking-wide">How we work?</h3>
                         </div>

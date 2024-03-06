@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 
 const NAV_LINKS = [
     { href: '/', label: 'Home' },
-    { href: '/', label: 'How Hilink Work?' },
-    { href: '//', label: 'Services' },
-    { href: '/', label: 'Pricing ' },
-    { href: '/', label: 'Contact Us' },
+    { href: '#', label: 'How Hilink Work?' },
+    { href: '#', label: 'Services' },
+    { href: '#', label: 'Pricing ' },
+    { href: '#', label: 'Contact Us' },
   ];
 
 export default function NavbarActions() {
