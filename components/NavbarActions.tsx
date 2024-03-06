@@ -4,11 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV_LINKS = [
-    { href: '/', key: 'home', label: 'Home' },
-    { href: '/how', key: 'how_hilink_work', label: 'How Hilink Work?' },
-    { href: '/services', key: 'services', label: 'Services' },
-    { href: '/pricing', key: 'pricing ', label: 'Pricing ' },
-    { href: '/contact', key: 'contact_us', label: 'Contact Us' },
+    { href: '/', label: 'Home' },
+    { href: '/', label: 'How Hilink Work?' },
+    { href: '//', label: 'Services' },
+    { href: '/', label: 'Pricing ' },
+    { href: '/', label: 'Contact Us' },
   ];
 
 export default function NavbarActions() {
@@ -16,10 +16,10 @@ export default function NavbarActions() {
   return (
     <>
     <ul className="lg:flex gap-10 hidden">
-      {NAV_LINKS.map(link=>(
+      {NAV_LINKS.map((link,index)=>(
         <Link 
         href={link.href}
-        key={link.key}
+        key={index}
         className={`text-gray-400 pb-1 ${pathname === link.href && 'activePage'}  hover:text-black transition-all duration-200 text-sm`}
         >
         {link.label}
