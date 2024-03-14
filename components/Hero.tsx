@@ -23,11 +23,10 @@ export default function Hero() {
                     <div className="py-10 flex items-center gap-2">
                         {Array(5).fill(1).map((_, index) => (
                             <Image
-                                src={'/icons8-star-48.png'}
+                                src={'/star.svg'}
                                 width={20}
                                 height={20}
                                 key={index}
-                                unoptimized={false}
                                 alt=""
                             />
                         ))}
@@ -42,11 +41,10 @@ export default function Hero() {
                         </button>
                         <div className="flex gap-3">
                             <Image
-                                src={'/icons8-play-50.png'}
+                                src={'/play.svg'}
                                 width={20}
                                 height={20}
                                 alt="play"
-                                unoptimized={false}
                             />
                             <h3 className="font-semibold text-sm tracking-wide">How we work?</h3>
                         </div>
